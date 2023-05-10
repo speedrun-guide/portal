@@ -12,7 +12,7 @@ const config = {
   favicon: 'img/favicon_white_no_text.png',
 
   // Set the production url of your site here
-  url: 'https://speedrun.guide',
+  url: 'https://portal.speedrun.guide',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -20,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'speedrun-guide', // Usually your GitHub org/user name.
-  projectName: 'base', // Usually your repo name.
+  projectName: 'portal', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,12 +65,12 @@ const config = {
       // <meta property="og:image" content="https://linkfork.co/images/poster.png">
       metadata: [
         {property: 'og:type', name: 'og:type', content: 'website'},
-        {property: 'og:url', name: 'og:url', content: 'https://speedrun.guide'},
+        {property: 'og:url', name: 'og:url', content: 'https://portal.speedrun.guide'},
         {property: 'og:title', name: 'og:title', content: 'Portal Speedrun Guide'},
-        {property: 'og:description', name: 'og:description', content: 'A guide to speedrunning Portal'},
+        {property: 'og:description', name: 'og:description', content: 'A speedrun guide for Portal (2008)'},
         {property: 'og:image', name: 'og:image', content: 'https://speedrun.guide/img/favicon_white.png'},
 
-        {property: 'description', name: 'description', content: 'A guide to speedrunning Portal'},
+        {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
       ],
       colorMode: {
         defaultMode: 'dark',
