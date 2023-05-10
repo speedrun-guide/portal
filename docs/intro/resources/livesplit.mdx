@@ -1,0 +1,52 @@
+---
+sidebar_position: 2
+title: LiveSplit
+---
+
+# LiveSplit <a href="https://livesplit.org/downloads/"><button className="button button--primary">Download</button></a>
+
+LiveSplit is a popular timer used for speedrunning. It is highly customizable, and can be used for many different
+games. It is recommended that you use LiveSplit for Portal speedruns, because it has a built-in plugin for recording
+game time. This is important, because we don't time Portal runs by real time, we do it with engine ticks.
+
+## Setup
+
+:::tip Skip Manual Setup
+You don't need to manually create the splits file, there is a preset file at the bottom of this page.
+:::
+
+To get started with LiveSplit, you'll need to download it from the link above. Once you've downloaded it, open it up.
+You'll be greeted with a small window with "0.00" on it.
+
+Right Click, then go to "Edit Splits..." at the top. From there, configure "Game Name" to be "Portal", and
+"Run Category" to be whichever category you'd like to run.
+<div style={{display: "flex", justifyContent: "center"}}>
+    <img style={{maxHeight: "225px"}} src="/img/tools/livesplit/edit-splits.png"></img>
+    <img style={{maxHeight: "225px"}} src="/img/tools/livesplit/game-and-cat.png"></img>
+</div>
+<br />
+
+Finally, you need to add all the segments. To do this, name the first segment "00/01", then click "Insert Below". Add all
+the segments up to e02.
+
+The maps in order are: `00/01` `02/03` `04/05` `06/07` `08` `09` `10` `11/12` `13` `14` `15` `16` `17` `18` `19` `e00` `e01` `e02`
+
+<div style={{display: "flex", justifyContent: "center"}}>
+    <img style={{maxHeight: "225px"}} src="/img/tools/livesplit/segments.png"></img>
+</div>
+<br />
+
+:::warning Common Timing Issue
+
+Sometimes, LiveSplit will revert the timing method to "Real Time" instead of "Game Time". If you're having timing issues
+where timing continues through loads or other problems, make sure to right-click LiveSplit, go to "Compare Against", and
+make sure "Game Time" is selected.
+
+:::
+
+
+## Preset Splits File
+
+If you don't want to manually add all the segments, you can download a preset [splits file here](/lss/portal-splits.lss)
+to save yourself the trouble. Then, go into LiveSplit, right click, hover "Open Splits", and click "From File...". Then
+select the file you downloaded.

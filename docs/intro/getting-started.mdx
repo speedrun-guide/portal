@@ -1,0 +1,86 @@
+---
+sidebar_position: 1
+slug: /
+---
+
+# Getting Started
+
+This guide will help you get started with speedrunning [Portal (2008)](https://en.wikipedia.org/wiki/Portal_(video_game)).
+
+![Portal](/img/portal-bg-720.jpg)
+
+It will explain how to set up the game, the various versions of the game
+that are commonly used in speedrunning, and various tools that are used to help speedrunners. It will also explain
+the techniques used in Portal speedrunning, and how to perform them.
+
+:::tip Play Portal casually first.
+Before you start, you should have a basic understanding of how to play Portal. If you have never played Portal before,
+you should play through the game casually before attempting to speedrun it. This isn't strictly required, but it is highly
+recommended.
+:::
+
+---
+# Getting the Game
+
+First, you should be familiar with the various versions of Portal. Each version explained below has its own page with
+more information, and its own reasons for being used. There are technically more versions of Portal, but these are the
+most commonly used ones.
+
+## Source Unpack <a href="https://wiki.sourceruns.org/wiki/Source_Unpack"><button className="button button--primary">Wiki</button></a> {#source-unpack}
+:::tip Use Source Unpack
+It comes preconfigured with useful tools, saves, and is the most commonly run version of the game.
+:::
+
+Source Unpack is an archive of the game's files at particular points
+in time. It is used for speedrunning, because it allows you to use older versions of the game that have more glitches
+and exploits. It also "unpacks" the games asset files for easy access, and includes a few other useful tools like
+[SPT](https://github.com/YaLTeR/SourcePauseTool) and the [Speedrun Demo Record Plugin](https://github.com/RedHaze/speedrun-demo-record-unified).
+Source Unpack is community driven, very reputable, and very safe. If you are concerned about it's safety, you can
+technically use the Steam version of the game, but it is not recommended.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+:::info Versions
+<Tabs defaultValue="5135">
+    <TabItem value="steampipe" label="Steampipe">
+        This is the version of the game that comes with Steam. Typically, this version is not used for speedrunning. It
+        is recommended that you use Source Unpack instead, because Steampipe patches out various glitches and exploits
+        commonly used in speedruns.<br /><br />
+        <a href="https://store.steampowered.com/app/400/Portal/"><button class="button button--secondary">Store Page</button></a>
+    </TabItem>
+    <TabItem value="5135" label="5135">
+        This is the most commonly used version of Source Unpack, which is based on the 5135 build of the game. It is
+        recommended that you use this version for speedrunning, unless you are doing high level OOB or NoSLA runs. If you
+        are just getting started, this is typically the way to go.<br /><br />
+        <a href="https://sourceunpack.gameabusefastcomplete.com/Source_Unpack.zip"><button class="button button--secondary">Download</button></a>
+    </TabItem>
+    <TabItem value="3420" label="3420">
+        This is an older version of Source Unpack, which is based on the 3420 build of the game. It is recommended that
+        you use this version for high level OOB and NoSLA runs. If you are just getting started, this is typically not
+        necessary to use.<br /><br />
+        <a href="https://sourceunpack.gameabusefastcomplete.com/Portal_3420.7z"><button class="button button--secondary">Download</button></a>
+    </TabItem>
+</Tabs>
+:::
+
+## Timing
+
+Timing begins when the crosshair appears and ends when it disappears after GLaDOS dies. Timing is done using game time,
+otherwise known as "engine ticks", while also including time spent paused. Loading screens are not timed.
+
+You are allowed to skip the intro vault waiting sequence by using the [vault save](/intro/resources/saves#vault_save).
+
+Timing your runs can be done either through recording demos, or through recording a video with LiveSplit running.
+It is highly recommended to use LiveSplit, it comes with auto splitting and a timer plugin that automatically times
+everything exactly as it should be timed. You can find a guide on how to set up LiveSplit [here](/intro/resources/livesplit).
+
+## Enable the Console
+
+We take advantage of the Source Engine console to run commands that help us speedrun. To enable the console, go to
+`Options > Keyboard > Advanced...` and check the box that says `Enable developer console`. You can now open the
+developer console by pressing the tilde key (`~`).
+
+To learn more about the console and allowed commands, check out the [commands page](/intro/commands).
+
+![Enable the console](/img/enable-console.png)

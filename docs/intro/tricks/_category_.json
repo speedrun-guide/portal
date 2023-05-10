@@ -1,8 +1,7 @@
 {
   "label": "Tricks",
-  "position": 3,
+  "position": 4,
   "link": {
-    "type": "doc",
-    "id": "tricks"
+    "type": "generated-index"
   }
 }

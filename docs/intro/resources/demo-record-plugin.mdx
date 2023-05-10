@@ -1,0 +1,70 @@
+---
+sidebar_position: 3
+title: Demo Record Plugin
+---
+
+# Demo Record Plugin <a href="https://github.com/RedHaze/speedrun-demo-record-unified/releases"><button className="button button--primary">Download</button></a>
+:::caution Likely Already Installed
+If you installed a Source Unpack version of Portal, you do not need to install this plugin or setup auto run, it's already installed.
+:::
+
+The Demo Record Plugin is a Source Engine plugin that automatically [records demos](https://developer.valvesoftware.com/wiki/Demo_Recording_Tools) for you.
+Demos are recordings of your gameplay that can be played back in-game and used externally for timing purposes.
+
+## Installation
+
+Download the correct version from the releases on GitHub. If you're on Unpack, you should already have the plugin, if you're
+on Steampipe, you need to download `speedrun_demorecord-2013.dll`.
+
+Next, go to your Portal installation directory, and put the `.dll` in the `portal/` directory.
+
+## Usage
+
+With the plugin installed in the directory, go into the game console and type `plugin_load speedrun_demorecord-<version>`,
+and replace `<version>` with which version you downloaded.
+
+You should see a message in the console like:
+```
+[Speedrun] Speedrun_demorecord Loaded
+```
+
+Now you will have access to these commands:
+
+|Command| Description                                                                                                                                                                                                                                                                |
+|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|`speedrun_start`| Loads the save stored in `speedrun_save`, or `speedrun_map` if no save is found, and starts auto recording demos.                                                                                                                                                          |
+|`speedrun_stop`| Stops the currently running speedrun if there is one, ending all demos.                                                                                                                                                                                                    |
+|`speedrun_map`| Sets the map to start a speedrun from, defaults to `testchmb_a_00`.                                                                                                                                                                                                        |
+|`speedrun_save`| Sets the save to start a speedrun from, defaults to none.                                                                                                                                                                                                                 |
+|`speedrun_segment`| Enables segmenting, where the plugin will start recording when you load a map, and stop recording when you exit the map, useful for IL.                                                                                                                                                                |
+|`speedrun_dir`|Sets the directory where demos will be stored, defaults to `./`, meaning the base directory.|
+
+:::tip Speedrun Directory
+It's recommended to set `speedrun_dir` to something like `demos`, that way your base directory doesn't get overcrowded with files.
+:::
+
+:::tip Vault Save
+Most runners use something called "vault save", which is a save that skips the first 53 seconds of waiting in the vault.
+You can learn more about this [here](https://wiki.sourceruns.org/wiki/Portal/Vault_Save).
+:::
+
+The basic usage is to load the plugin, and type `speedrun_start` to start a speedrun. If during your speedrun, you want to
+"reset", just execute that command again. Once you finish a run, you will see a folder named `<year>.<month>.<day>-<hour>.<minute>.<second>`
+(example: `2023.05.10-05.03.58`) in your speedrun directory, which contains all the demos for that run.
+
+## Auto Run
+
+It can be annoying to have to remember to load the plugin every time you start the game, so most players use a VDF file to
+automatically load the plugin.
+
+First, go to your Portal installation directory, and navigate to `portal/addons/`. If the `addons` folder doesn't exist, create it.
+
+Then create a file named `speedrun_demorecord.vdf` with the following contents:
+```vdf
+Plugin
+{
+	file "speedrun_demorecord-<version>.dll"
+}
+```
+While appropriately replacing `<version>` with the version you downloaded. Now when you start the game, the plugin
+will automatically load.
