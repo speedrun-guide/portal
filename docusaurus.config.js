@@ -77,7 +77,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
+      image: 'img/favicon_white.png',
       navbar: {
         title: 'Portal Speedrun Guide',
         logo: {
