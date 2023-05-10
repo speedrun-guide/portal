@@ -67,10 +67,10 @@ const config = {
         {property: 'og:type', name: 'og:type', content: 'website'},
         {property: 'og:url', name: 'og:url', content: 'https://portal.speedrun.guide'},
         {property: 'og:title', name: 'og:title', content: 'Portal Speedrun Guide'},
-        {property: 'og:description', name: 'og:description', content: 'A speedrun guide for Portal (2008)'},
+        {property: 'og:description', name: 'og:description', content: 'A speedrun guide for Portal (2007)'},
         {property: 'og:image', name: 'og:image', content: 'https://speedrun.guide/img/favicon_white.png'},
 
-        {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
+        {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2007)'},
         {property: "twitter:card", name: "twitter:card", content: "summary"},
       ],
 
