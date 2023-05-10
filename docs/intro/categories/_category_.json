@@ -3,6 +3,7 @@
   "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "There are five major categories and a long list of extension categories."
+    "description": "There are five major categories and a long list of extension categories.",
+    "slug": "categories"
   }
 }
