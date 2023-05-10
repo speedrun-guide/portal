@@ -84,7 +84,7 @@ const config = {
             position: 'left',
             label: 'Chambers',
           },
-          {to: '/unofficial_maps', label: 'Unofficial Maps', position: 'left'},
+          // {to: '/unofficial_maps', label: 'Unofficial Maps', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -100,7 +100,7 @@ const config = {
             items: [
               {
                 label: 'Introduction',
-                to: '/docs/intro',
+                to: '/',
               },
             ],
           },
