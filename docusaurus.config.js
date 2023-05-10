@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Speedrun Guide',
+        title: 'Portal Speedrun Guide',
         logo: {
           alt: 'Speedrun Guide Logo',
           // src: 'img/logo.svg',
