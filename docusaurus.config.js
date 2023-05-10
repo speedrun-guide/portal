@@ -71,6 +71,7 @@ const config = {
         {property: 'og:image', name: 'og:image', content: 'https://speedrun.guide/img/favicon_white.png'},
 
         {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
+        {property: "twitter:card", name: "twitter:card", content: "summary"},
       ],
       colorMode: {
         defaultMode: 'dark',
