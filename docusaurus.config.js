@@ -6,12 +6,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Speedrun Guide',
+  title: 'Portal Speedrun Guide',
   tagline: '',
-  favicon: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
+  // favicon: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
+  favicon: 'img/favicon_white_no_text.png',
 
   // Set the production url of your site here
-  url: 'https://speedrun.guide',
+  url: 'https://portal.speedrun.guide',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -19,7 +20,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'speedrun-guide', // Usually your GitHub org/user name.
-  projectName: 'base', // Usually your repo name.
+  projectName: 'portal', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -57,18 +58,34 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      //<meta property="og:type" content="website">
+      // <meta property="og:url" content="https://linkfork.co/">
+      // <meta property="og:title" content="LinkFork | Link Preview Customization">
+      // <meta property="og:description" content="LinkFork lets you shorten, and customize how your link will appear when shared on social media, for free.">
+      // <meta property="og:image" content="https://linkfork.co/images/poster.png">
+      metadata: [
+        {property: 'og:type', name: 'og:type', content: 'website'},
+        {property: 'og:url', name: 'og:url', content: 'https://portal.speedrun.guide'},
+        {property: 'og:title', name: 'og:title', content: 'Portal Speedrun Guide'},
+        {property: 'og:description', name: 'og:description', content: 'A speedrun guide for Portal (2008)'},
+        {property: 'og:image', name: 'og:image', content: 'https://speedrun.guide/img/favicon_white.png'},
+
+        {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
+        {property: "twitter:card", name: "twitter:card", content: "summary"},
+      ],
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
       },
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/favicon_white.png',
       navbar: {
         title: 'Portal Speedrun Guide',
         logo: {
           alt: 'Portal Logo',
+          src: 'img/favicon_white_no_text.png',
           // src: 'img/logo.svg',
-          src: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
+          // src: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
         },
         items: [
           {
