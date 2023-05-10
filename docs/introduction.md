@@ -11,7 +11,7 @@ that are commonly used in speedrunning and why, and various tools that are used 
 the techniques used in Portal speedrunning, and how to perform them.
 
 First, you should get familiar with setting up the game for speedrunning. You can find instructions for setting up the game
-[here](/docs/setup/).
+
 
 :::tip
 ## Play Portal casually first.
