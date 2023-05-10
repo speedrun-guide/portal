@@ -73,6 +73,16 @@ const config = {
         {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
         {property: "twitter:card", name: "twitter:card", content: "summary"},
       ],
+
+      announcementBar: {
+        id: 'wip',
+        content:
+            'This guide is a work in progress and not yet complete. Contribution will be open soon.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
+
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,

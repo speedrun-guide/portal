@@ -9,9 +9,73 @@ Portal speedrunning.
 
 ## Commands
 
+This is a table of officially whitelisted commands, pulled from [SRDC](https://www.speedrun.com/portal/full_game?h=Out_of_Bounds-PC&rules=game&x=lvdowokp-kn0mz7ol.jq6nxjnl).
+
+:::caution
+Just because a command is whitelisted, does not clear it to be used in multi-binds on one key. Each category has it's own
+list of rules you must follow, too.
+:::
+
+| Command | Description                                                                                                 |
+| ------- |-------------------------------------------------------------------------------------------------------------|
+| `sv_player_funnel_into_portals` | Enable/Disable player funnelling into portals.                                                              |
+| `toggle_duck` | Toggle crouching.                                                                                           |
+| `cl_showpos` | Show position in the top left corner of the screen.                                                         |
+| `r_drawviewmodel` | Enable/Disable viewmodels.                                                                                  |
+| `sensitivity` | Set mouse sensitivity.                                                                                      |
+| `save` | Save the game.                                                                                              |
+| `load` | Load the game.                                                                                              |
+| `fps_max` | Set the maximum framerate, only works without disconnecting on 3420.                                        |
+| `viewmodel_fov` | Set the viewmodel FOV.                                                                                      |
+| `say` | Send a message to the chat.                                                                                 |
+| `gl_clear` | Modifies the way "void" is rendered.                                                                                           |
+| `net_graph` | Show a graph of network usage.                                                                                           |
+| `cl_showfps` | Show the framerate in the top right corner of the screen.                                                                                           |
+| `sv_autosave` | Enable/Disable autosaving.                                                                                           |
+| `mat_dxlevel` | Set the DirectX version.                                                                                           |
+| `echo` | Print a message to the console.                                                                                           |
+
+All commands for the [Demo Record Plugin](/intro/resources/demo-record-plugin#usage) are also whitelisted.
+
+Whitelisted combination binds for glitch categories:
+- `save <name>;load <name>;` - Used for [save glitch](/intro/tricks/save-glitch) and other things.
+- `save <name>;fps_max <value>;load <name>` - Used for setting the max FPS convar and various glitches.
 
 ## Options
 
+### FOV
+
+Most Portal players use a higher FOV than the default 75. In order to change this, you can type `fov_desired <number>` into
+the console. However, if you're playing on 3420, you'll need to [use a save to change your FOV](resources/saves#wakeup_saves).
+
+### DX90 vs DX80
+Some Portal players use the launch option `-dxlevel 80` to run the game in DirectX 8.0 mode. This is typically done simply
+for stylistic reasons, as the game looks more simple and darker in DX80. This is a completely optional launch option, and
+is not required for any category.
+
+To enable DX80, simply add `-dxlevel 80` to your launch options. To disable it, remove it from your launch options. You
+can change this launch option either in Steam by right-clicking Portal, clicking Properties, and typing it into the
+Launch Options box, or if you're using [Source Unpack](/#source-unpack), add it to the `start` command in your `Portal.bat`
+file. Then, after you launch the game, you should remove the option. It will stay, but if you leave the option there, it
+will reset your settings every time you launch the game.
 
 ## Binds
+
+### save/load bind
+`bind g save glitch;load glitch`
+
+For most glitched categories, it is necessary to bind a key to saving and loading immediately after. This is used to
+perform a large number of tricks, including [save glitch](/intro/tricks/save-glitch), [bsg](/intro/tricks/bsg), and
+various others.
+
+### mouse scroll jump bind
+`bind mwheelup +jump;bind mwheeldown +jump`
+
+For nearly all categories, it is very helpful to bind jumping to scroll, as all main categories require a lot
+of [bhop](/intro/tricks/movement/bhop) and/or [ahop](/intro/tricks/movement/ahop).
+
+### toggle_duck
+`bind r toggle_duck`
+
+For categories that require [ahop](/intro/tricks/movement/ahop), it is very helpful to bind toggle duck to a key.
 
