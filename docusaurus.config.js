@@ -73,6 +73,16 @@ const config = {
         {property: 'description', name: 'description', content: 'A speedrun guide for Portal (2008)'},
         {property: "twitter:card", name: "twitter:card", content: "summary"},
       ],
+
+      announcementBar: {
+        id: 'wip',
+        content:
+            'This guide is a work in progress and not yet complete. Contribution will be open soon.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: true,
+      },
+
       colorMode: {
         defaultMode: 'dark',
         respectPrefersColorScheme: true,
@@ -95,12 +105,12 @@ const config = {
             label: 'Introduction',
           },
           // {to: '/chambers', label: 'Chambers', position: 'left'},
-          {
-            type: 'docSidebar',
-            sidebarId: 'chambersSidebar',
-            position: 'left',
-            label: 'Chambers',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'chambersSidebar',
+          //   position: 'left',
+          //   label: 'Chambers',
+          // },
           // {to: '/unofficial_maps', label: 'Unofficial Maps', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
