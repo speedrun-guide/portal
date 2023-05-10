@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Speedrun Guide',
   tagline: '',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
 
   // Set the production url of your site here
   url: 'https://speedrun.guide',
@@ -66,18 +66,24 @@ const config = {
       navbar: {
         title: 'Portal Speedrun Guide',
         logo: {
-          alt: 'Speedrun Guide Logo',
+          alt: 'Portal Logo',
           // src: 'img/logo.svg',
-          src: 'https://sparse.blue/logo',
+          src: 'https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/c7cb09b9f0fbb9589b4bd5a8217c8333c4d8204e.ico',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'introSidebar',
             position: 'left',
             label: 'Introduction',
           },
-          {to: '/chambers', label: 'Chambers', position: 'left'},
+          // {to: '/chambers', label: 'Chambers', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'chambersSidebar',
+            position: 'left',
+            label: 'Chambers',
+          },
           {to: '/unofficial_maps', label: 'Unofficial Maps', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -89,32 +95,32 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
+          {
+            title: 'Guide',
+            items: [
+              {
+                label: 'Introduction',
+                to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'GitHub',
+                href: 'https://github.com/speedrun-guide/portal',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discord.gg/gQ285vS',
+              },
+              {
+                label: 'SRDC',
+                href: 'https://www.speedrun.com/user/Portal',
+              },
+            ],
+          },
           // {
           //   title: 'More',
           //   items: [
