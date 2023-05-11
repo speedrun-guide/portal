@@ -144,7 +144,7 @@ const config = {
               },
               {
                 label: 'SRDC',
-                href: 'https://www.speedrun.com/user/Portal',
+                href: 'https://www.speedrun.com/Portal',
               },
             ],
           },
