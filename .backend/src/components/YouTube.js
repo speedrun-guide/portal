@@ -24,9 +24,9 @@ export default function YouTube({id, url, width, timestamp}) {
         url = url + "?start=" + timestamp;
     }
 
-    return (<iframe style={{width: width != null ? width : "100%", aspectRatio: "16 / 9"}} src={url}
+    return ( <div style={{display:"flex", justifyContent:"center"}}><iframe style={{width: width != null ? width : "66%", aspectRatio: "16 / 9"}} src={url}
             title="YouTube video player" frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>)
+            allowFullScreen></iframe></div>)
 
 }
