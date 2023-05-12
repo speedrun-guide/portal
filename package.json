@@ -2,7 +2,6 @@
   "scripts": {
     "postinstall": "cd .backend && npm install",
     "start": "cd .backend && npm run start --",
-    "build": "cd .backend && npm run build",
-    "dev": "cd .backend && npm run dev --"
+    "build": "cd .backend && npm run build"
   }
 }
