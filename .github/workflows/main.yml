@@ -14,4 +14,4 @@ jobs:
           node-version: ">=18.16.0"
       - run: npm install --prefix .backend
       - run: npm run build
-      - run: cd .backend/deploy && flyctl deploy
+      - run: cd .backend && flyctl deploy
