@@ -105,12 +105,12 @@ const config = {
             label: 'Introduction',
           },
           // {to: '/chambers', label: 'Chambers', position: 'left'},
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'chambersSidebar',
-          //   position: 'left',
-          //   label: 'Chambers',
-          // },
+          {
+            type: 'docSidebar',
+            sidebarId: 'chambersSidebar',
+            position: 'left',
+            label: 'Chambers',
+          },
           // {to: '/unofficial_maps', label: 'Unofficial Maps', position: 'left'},
           // {
           //   href: 'https://github.com/facebook/docusaurus',
