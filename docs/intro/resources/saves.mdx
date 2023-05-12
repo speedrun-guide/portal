@@ -28,16 +28,13 @@ import TabItem from '@theme/TabItem';
 
 :::info Versions
 <Tabs defaultValue="oob">
-    <TabItem value="oob" label="OOB">
+    <TabItem value="oob" label="Out Of Bounds">
         <a href="https://google.com"><button className="button button--secondary">Download</button></a>
     </TabItem>
     <TabItem value="inbounds" label="Inbounds">
         <a href="https://google.com"><button className="button button--secondary">Download</button></a>
     </TabItem>
-    <TabItem value="inbounds-no-sla-legacy" label="Inbounds NoSLA (Legacy)">
-        <a href="https://google.com"><button className="button button--secondary">Download</button></a>
-    </TabItem>
-    <TabItem value="inbounds-no-sla-unrestricted" label="Inbounds NoSLA (Unrestricted)">
+    <TabItem value="inbounds-no-sla" label="Inbounds No SLA (Combined)">
         <a href="https://google.com"><button className="button button--secondary">Download</button></a>
     </TabItem>
     <TabItem value="glitchless" label="Glitchless">
@@ -56,7 +53,7 @@ installation directory. Then, go in game, and type `load `, where you should be 
 The saves are named in the following format:
 
 `<category>-<map>[?il]-<description>`
-- `category` is the shorthand of the category of the save, such as `gl` for glitchless or `inbob` for inbounds.
+- `category` is the shorthand of the category of the save, such as `gl` for glitchless or `inb` for inbounds.
 - `map` is the name of the chamber the save is for, such as `11` or `12`.
-- `il` is an optional flag that indicates that the save is in the previous map, making it work with `speedrun_segment` and a valid IL save.
-- `description` is a short description of the save, such as `spiderman` or `adam`.
+- `il` is an optional flag that indicates that the save is in the previous map, making it a valid Individual Level save.
+- `description` is a short description of the save, such as `prehop` or `cubethrow`.
