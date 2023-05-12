@@ -81,7 +81,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           // TODO: Allow editing of pages!
           // editUrl:
-            // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //   'https://pr.new/github.com/speedrun-guide/portal/edit/master/',
         },
         blog: false
         // theme: {
