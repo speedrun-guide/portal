@@ -48,13 +48,7 @@ learn how to [here](https://docs.github.com/en/get-started/quickstart/set-up-git
 2. Install [Node.js](https://nodejs.org/en/download).
 
 
-3. Install dependencies by running `npm install` in the project directory in a terminal.
-
-
-4. Run `npm run start` in the project directory to start the development server.
-
-
-5. `localhost` should automatically open in your browser and provide you a live updating preview.
+3. Run `npm run dev` in the project directory in a terminal. `localhost:3000` should automatically open in your browser and provide you a live updating preview.
 
 
 Once you've followed all of these steps, you can edit the guide and see your changes in real time.
