@@ -23,8 +23,8 @@ recommended.
 # Getting the Game
 
 First, you should be familiar with the various versions of Portal. Each version explained below has its own page with
-more information, and its own reasons for being used. There are technically more versions of Portal, but these are the
-most commonly used ones.
+more information, and its own reasons for being used. There are more versions of Portal, but these are the most supported
+for use in speedrunning.
 
 ## Source Unpack <a href="https://wiki.sourceruns.org/wiki/Source_Unpack"><button className="button button--primary">Wiki</button></a> {#source-unpack}
 :::tip Use Source Unpack
@@ -33,10 +33,10 @@ It comes preconfigured with useful tools, saves, and is the most commonly run ve
 
 Source Unpack is an archive of the game's files at particular points
 in time. It is used for speedrunning, because it allows you to use older versions of the game that have more glitches
-and exploits. It also "unpacks" the games asset files for easy access, and includes a few other useful tools like
+and exploits. It also comes with unpacked game files, and includes a few other useful tools like
 [SPT](https://github.com/YaLTeR/SourcePauseTool) and the [Speedrun Demo Record Plugin](https://github.com/RedHaze/speedrun-demo-record-unified).
 Source Unpack is community driven, very reputable, and very safe. If you are concerned about it's safety, you can
-technically use the Steam version of the game, but it is not recommended.
+technically use the Steam version of the game, but it requires further setup for submitting runs.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -45,18 +45,18 @@ import TabItem from '@theme/TabItem';
 <Tabs defaultValue="5135">
     <TabItem value="steampipe" label="Steampipe">
         This is the version of the game that comes with Steam. Typically, this version is not used for speedrunning. It
-        is recommended that you use Source Unpack instead, because Steampipe patches out various glitches and exploits
-        commonly used in speedruns.<br /><br />
+        is recommended that you use Source Unpack instead, because Steampipe can greatly increase difficulty of some glitches,
+        or outright patch them in some cases.<br /><br />
         <a href="https://store.steampowered.com/app/400/Portal/"><button className="button button--secondary">Store Page</button></a>
     </TabItem>
     <TabItem value="5135" label="5135">
-        This is the most commonly used version of Source Unpack, which is based on the 5135 build of the game. It is
+        This is the most commonly used version of Source Unpack, which contains the 5135 build of the game. It is
         recommended that you use this version for speedrunning, unless you are doing high level OOB or NoSLA runs. If you
         are just getting started, this is typically the way to go.<br /><br />
         <a href="https://sourceunpack.gameabusefastcomplete.com/Source_Unpack.zip"><button className="button button--secondary">Download</button></a>
     </TabItem>
     <TabItem value="3420" label="3420">
-        This is an older version of Source Unpack, which is based on the 3420 build of the game. It is recommended that
+        This version of Source Unpack contains the 3420 build of the game. It is recommended that
         you use this version for high level OOB and NoSLA runs. If you are just getting started, this is typically not
         necessary to use.<br /><br />
         <a href="https://sourceunpack.gameabusefastcomplete.com/Portal_3420.7z"><button className="button button--secondary">Download</button></a>
@@ -71,20 +71,28 @@ Portal on Steam to work.
 
 ## Timing
 
-Timing begins when the crosshair appears and ends when it disappears after GLaDOS dies. Timing is done using game time,
-otherwise known as "engine ticks", while also including time spent paused. Loading screens are not timed.
+Timing begins when the crosshair appears and ends when GLaDOS dies. Timing is done using game time,
+otherwise known as "engine ticks", while also including time spent paused. Loading time is not counted.
 
 You are allowed to skip the intro vault waiting sequence by using the [vault save](/resources/saves#vault_save).
 
 Timing your runs can be done either through recording demos, or through recording a video with LiveSplit running.
-It is highly recommended to use LiveSplit, it comes with auto splitting and a timer plugin that automatically times
-everything exactly as it should be timed. You can find a guide on how to set up LiveSplit [here](/resources/livesplit).
+It is highly recommended to use [LiveSplit](/resources/livesplit), it comes with an auto splitter that times everything accurately,
+including pauses.
+
+:::caution Update LiveSplit
+If you already have LiveSplit, make sure you are up-to-date with the latest version, which comes with SourceSplit 3.3+.
+:::
 
 ## Enable the Console
 
 We take advantage of the Source Engine console to run commands that help us speedrun. To enable the console, go to
 `Options > Keyboard > Advanced...` and check the box that says `Enable developer console`. You can now open the
-developer console by pressing the tilde key (`~`).
+developer console by pressing the tilde key (`~`) located typically under the `Esc` key.
+
+Some keyboards may not have a tilde key. To get around this, you should add a bind for the command `toggleconsole` in your
+[autoexec.cfg file](/commands-options-binds#autoexeccfg). It is a good idea to use one of the F1 through F12 keys for this
+to avoid complications that occur when using other keys. An example you might put in your autoexec.cfg is `bind f1 toggleconsole`.
 
 To learn more about the console and allowed commands, check out the [commands page](/commands-options-binds).
 
