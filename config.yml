@@ -1,0 +1,33 @@
+id: portal
+name: Portal
+year: 2007
+favicon: /img/favicon_white_no_text.png
+logo: /img/favicon_white.png
+announcement: 
+  id: wip
+  content: 'This guide is a work in progress and not yet complete. Contribution will be open soon.'
+  backgroundColor: '#FAFBFC'
+  textColor: '#091E42'
+  isCloseable: true
+sections:
+  intro:
+    name: Introduction
+    path: intro
+  chambers:
+    name: Chambers
+    path: chambers
+footer:
+  style: 'dark'
+  links:
+  - title: Guide
+    items:
+    - label: Introduction
+      to: /
+  - title: Community
+    items:
+    - label: GitHub
+      to: 'https://github.com/speedrun-guide/portal'
+    - label: Discord
+      to: 'https://discord.gg/gQ285vS'
+    - label: SRDC
+      to: 'https://www.speedrun.com/Portal'
