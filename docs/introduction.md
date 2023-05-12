@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-This guide will help you get started with speedrunning [Portal (2008)](https://en.wikipedia.org/wiki/Portal_(video_game)).
+This guide will help you get started with speedrunning [Portal (2007)](https://en.wikipedia.org/wiki/Portal_(video_game)).
 
 It will explain how to get started speedrunning Portal, including how to set up the game, the various versions of the game
 that are commonly used in speedrunning and why, and various tools that are used to help speedrunners. It will also explain
