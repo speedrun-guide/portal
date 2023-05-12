@@ -26,10 +26,6 @@ You can use [StackBlitz](https://stackblitz.com/) web-based editor and link your
 have access to a web version of [Visual Studio Code](https://code.visualstudio.com/), where you can edit the files and
 see a preview update in real time. 
 
-You can also create and PR your fork from here. On the left side, select `Source Control`, and from there, click
-`Create & Push Branch`. This will create a new branch in your fork and push your changes to it. You'll find this fork
-in your GitHub account.
-
 1. In the top right, click `Fork` to create a fork of the repository. This will create a copy of the repository in your account.
 Alternatively, you can [click here to create a fork](https://github.com/speedrun-guide/portal/fork).
 
@@ -37,7 +33,8 @@ Alternatively, you can [click here to create a fork](https://github.com/speedrun
 For example, if your username is `speedrun-guide` and your fork is named `portal`, you would visit `https://pr.new/github/speedrun-guide/portal`.
 
 3. From here, you can edit the files and see a preview update in real time. When you're done, you can push the changes
-to your fork, then [submit a pull request](https://github.com/speedrun-guide/portal/pulls).
+to your fork, then [submit a pull request](https://github.com/speedrun-guide/portal/pulls). You can also create a pull request
+directly from within the editor by navigating to `Source Control` on the left side.
 
 #### Local Development
 
