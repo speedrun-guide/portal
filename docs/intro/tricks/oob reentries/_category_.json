@@ -1,0 +1,9 @@
+{
+  "label": "Common OOB Reentries",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "Commonly used Out of Bounds reentry methods.",
+    "slug": "/tricks/oob-reentries"
+  }
+}
