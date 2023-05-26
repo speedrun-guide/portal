@@ -16,6 +16,9 @@ sections:
   chambers:
     name: Chambers
     path: chambers
+  extras:
+    name: Extra
+    path: extra
 footer:
   style: 'dark'
   links:

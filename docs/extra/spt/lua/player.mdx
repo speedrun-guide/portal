@@ -1,0 +1,29 @@
+---
+sidebar_position: 5
+title: Player
+---
+
+import Documentation from './_docs/_player.md'
+
+# Player
+
+The player library extends a lot of the same functionality from the entity library, but is specific to the player.
+There are some player specific functions, like `get_local_ang` and `get_local_pos` that are not available on all
+entities.
+
+## Example
+
+```lua title="portal/lua/scripts/player_example.lua"
+console.msg("Player is at position %s\n", player.get_pos())
+
+player.set_pos(vec3(0, 0, 0))
+
+local local_angles = player.get_local_ang()
+console.msg("Player local angles are %s\n", local_angles)
+```
+
+## Documentation
+
+---
+
+<Documentation />

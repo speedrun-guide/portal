@@ -1,0 +1,32 @@
+---
+sidebar_position: 3.5
+title: Input
+---
+
+import Documentation from './_docs/_input.md'
+
+# Input
+
+The input library provides the ability to simulate inputs. This is useful for systems like TAS, or just using a script
+to execute a sequence of inputs, perfectly timed.
+
+## Example
+###### Note: This example is wrapped in `game.async` so we can use `wait` to wait for an event, like the player teleporting.
+```lua title="portal/lua/scripts/input_example.lua"
+game.async(function()
+    input.forward:hold()
+
+    -- Wait for the player to go through a portal
+    events.player_teleport:wait()
+
+    -- release forward, hold left, and tap jump (meaning press for 1 tick, then release)
+    input.forward:release()
+    input.left:hold()
+    input.jump:tap()
+end)
+```
+
+## Documentation
+---
+
+<Documentation />

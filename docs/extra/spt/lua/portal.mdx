@@ -1,0 +1,46 @@
+---
+sidebar_position: 6
+title: Portal
+---
+
+import Documentation from './_docs/_portal.md'
+
+# Portal
+
+The portal library allows you to get information about portals. You can get the position, angles, whether the portal is active,
+it's transformation matrix, and more.
+
+## Example
+
+```lua title="portal/lua/scripts/portal_example.lua"
+local blue = portal.blue()
+
+if blue:is_active() then
+    console.msg("Blue Portal is active at pos %s", blue:get_entity():get_pos())
+else
+    console.msg("Blue Portal is not active")
+end
+
+local linked = blue:get_linked()
+
+if linked then
+    console.msg("Blue Portal is linked to %s", linked:get_entity():get_pos())
+else
+    console.msg("Blue Portal is not linked")
+end
+
+local closest = portal.closest()
+
+if closest then
+    console.msg("Closest Portal is %s", closest:get_entity():get_pos())
+else
+    console.msg("No Portals are active")
+end
+
+```
+
+## Documentation
+
+---
+
+<Documentation />

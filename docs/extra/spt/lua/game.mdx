@@ -1,0 +1,26 @@
+---
+sidebar_position: 3
+title: Game
+---
+
+import Documentation from './_docs/_game.md'
+
+# Game
+
+The game library provides useful functions for interacting with the game. This includes saving and loading, starting/stopping
+demo recording, getting the game directory, pausing, and launching "async" tasks.
+
+## Example
+
+```lua title="portal/lua/scripts/game_example.lua"
+game.save("test-save")
+
+game.load("test-save")
+
+console.msg("Game Directory: %s", game.get_directory())
+```
+
+## Documentation
+---
+
+<Documentation />

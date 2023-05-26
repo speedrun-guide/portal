@@ -1,0 +1,30 @@
+---
+sidebar_position: 2
+title: Console
+---
+
+import Documentation from './_docs/_console.md'
+
+# Console
+
+The console library allows you to interact with the game console. This is useful for printing messages, creating
+console variables and commands, executing commands, and more.
+
+
+## Example
+
+```lua title="portal/lua/scripts/console_example.lua"
+console.msg("Hello %s\n", "world!")
+
+local pos = player.get_pos()
+console.msg(0xFF00FF, "Player position: %f, %f, %f\n", pos.x, pos.y, pos.z)
+
+if pos.z > 256 then
+    console.warning("Player is too high up!")
+end
+```
+
+## Documentation
+---
+
+<Documentation />

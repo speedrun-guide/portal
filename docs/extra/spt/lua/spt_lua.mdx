@@ -1,0 +1,89 @@
+---
+sidebar_position: 1
+slug: /extra/spt/lua
+---
+
+# SPT Lua
+
+:::warning Incomplete
+SPT Lua as it stands if not complete, and the documentation is also still very much a work in progress. If you are seeing this,
+it's purely just to give you an idea of what's to come, and to get feedback on the current state of the documentation.
+:::
+
+SPT Lua gives access to the Lua scripting language in Portal. This was originally being developed as an independent plugin
+called "vlua" by [ChrisUMB](https://github.com/ChrisUMB/) and [Tom](https://github.com/timtomtim7/). The plugin was used
+to create the [latest Glitchless TAS](https://www.youtube.com/watch?v=zQsHq6vshOA), and when public interest in the plugin
+increased, it was decided to merge it into SPT.
+
+:::caution Not Yet In SPT
+As it stands, SPT Lua is still in development, and is not yet officially integrated into SPT. However, if you are interested in
+testing it, you can download the latest version from the [releases](https://github.com/ChrisUMB/SourcePauseTool-vlua/releases) page on the GitHub fork of SPT.
+:::
+
+## Uses
+
+SPT Lua provides a number of different ways to interact with the game. You can print to the console, change the player's
+position, get information about entities, listen to game events like `player_touch_trigger`, `player_teleport`, and more.
+You can even modify the game's memory directly, allowing you to test hooks and memory manipulation without having to
+set up a plugin development environment.
+
+## Getting Started
+
+### Commands
+
+- `spt_lua_run <path>` - Runs the Lua file at the given path.
+- `spt_lua_reset` - Resets the Lua environment.
+
+### Folder Structure
+
+Once you have downloaded the latest version of SPT and loaded it, there will be a new folder in your Portal directory
+called `lua`. This folder contains useful assets, like auto generated documentation, a `libraries` folder which will
+be useful later, and a `scripts` folder where you can put your own Lua scripts.
+
+
+### Your First Script
+
+To get started, create a new file in the `scripts` folder called `hello_world.lua`. Open the file in your favorite text
+editor.
+
+:::tip Visual Studio Code
+The [Visual Studio Code](https://code.visualstudio.com/) text editor has a number of useful extensions for Lua development.
+SPT Lua contains Lua documentation powered by [Lua Language Server](https://github.com/LuaLS/lua-language-server), which
+you can get as an extension for VS Code [here](https://marketplace.visualstudio.com/items?itemName=sumneko.lua).
+:::
+
+```lua title="portal/lua/scripts/hello_world.lua"
+console.msg("Hello, world!")
+console.warning("Hello, world, but in red!")
+```
+
+Save the file, then go back to Portal. Open the console and run `spt_lua_run hello_world`. You should see
+```
+Hello, world!
+Hello, world, but in red!
+```
+printed to the console.
+
+### Libraries
+
+SPT Lua supports loading libraries from the `lua/libraries` folder. This is useful for sharing code between scripts.
+One such library that you might have heard about before is [tas.lua](https://github.com/ChrisUMB/portal-lua-tas).
+
+To use a library, download it and place it in the `lua/libraries` folder. Then, in your script, use the `require`
+function to load it.
+
+```lua title="portal/lua/libraries/example_library.lua"
+local example_library = {}
+
+function example_library.hello_world()
+    console.msg("Hello, world!")
+end
+
+return example_library
+```
+
+```lua title="portal/lua/scripts/tas_example.lua"
+local example_library = require("example_library")
+
+example_library.hello_world()
+```

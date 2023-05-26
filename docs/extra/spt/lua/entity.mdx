@@ -1,0 +1,34 @@
+---
+sidebar_position: 4
+title: Entity
+---
+
+import Documentation from './_docs/_entity.md'
+
+# Entity
+
+The entity library allows you to interface with entities in the game. This includes the player, cameras, triggers, orbs,
+turrets, and more. You can use this library to get information about entities, like their position, or to modify them,
+like changing their position.
+
+## Example
+
+```lua title="portal/lua/scripts/entity_example.lua"
+local entity = entity.from_id(37)
+
+console.msg("Entity 37 is at position %s\n", entity:get_pos())
+
+entity:set_pos(vec3(0, 0, 0))
+
+local closest = entity.closest("prop_energy_ball")
+
+if closest ~= nil then
+    console.msg("The closest energy ball to the player is at position %s\n", closest:get_pos())
+end
+```
+
+## Documentation
+
+---
+
+<Documentation />

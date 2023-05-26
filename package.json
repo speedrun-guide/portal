@@ -4,5 +4,8 @@
     "start": "cd .backend && npm run start --",
     "dev": "cd .backend && npm install && npm run start --",
     "build": "cd .backend && npm run build"
+  },
+  "dependencies": {
+    "remark-directive": "^2.0.1"
   }
 }

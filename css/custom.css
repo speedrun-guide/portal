@@ -1,0 +1,48 @@
+:root {
+    --ifm-color-primary: #0063f7;
+    --ifm-color-primary-dark: #0059de;
+    --ifm-color-primary-darker: #0054d2;
+    --ifm-color-primary-darkest: #0045ad;
+    --ifm-color-primary-light: #1170ff;
+    --ifm-color-primary-lighter: #1d78ff;
+    --ifm-color-primary-lightest: #428eff;
+}
+
+[data-theme='dark'] {
+    --ifm-color-primary: #5fa0ff;
+    --ifm-color-primary-dark: #3c8bff;
+    --ifm-color-primary-darker: #2a81ff;
+    --ifm-color-primary-darkest: #0064f5;
+    --ifm-color-primary-light: #82b5ff;
+    --ifm-color-primary-lighter: #94bfff;
+    --ifm-color-primary-lightest: #c8deff;
+    --ifm-background-color: #1e1e1e;
+}
+
+[data-theme='dark'] .thin-scrollbar {
+    background-color: #222222;
+}
+
+[data-theme='dark'] .scrollbar {
+    background-color: #222222;
+}
+
+.beginner[aria-selected='true'] {
+    border-bottom-color: lightgreen;
+    color: lightgreen;
+}
+
+.intermediate[aria-selected='true'] {
+    border-bottom-color: khaki;
+    color: khaki;
+}
+
+.advanced[aria-selected='true'] {
+    border-bottom-color: lightcoral;
+    color: lightcoral;
+}
+
+.outdated[aria-selected='true'] {
+    border-bottom-color: dimgray;
+    color: dimgray;
+}

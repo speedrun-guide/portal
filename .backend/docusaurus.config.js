@@ -46,6 +46,10 @@ function buildFooter() {
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const testPlugin = require('./src/remark/test');
+
+// import remarkDirective from "remark-directive";
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: srgName,
@@ -76,17 +80,18 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          path: '../docs'
+          path: '../docs',
+          remarkPlugins: [testPlugin],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // TODO: Allow editing of pages!
           // editUrl:
           //   'https://pr.new/github.com/speedrun-guide/portal/edit/master/',
         },
-        blog: false
-        // theme: {
-        //   customCss: require.resolve('./src/css/custom.css'),
-        // },
+        blog: false,
+        theme: {
+          customCss: require.resolve('../css/custom.css')
+        },
       }),
     ],
   ],
@@ -125,6 +130,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['lua'],
       },
     }),
 };

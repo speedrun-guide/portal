@@ -1,0 +1,28 @@
+---
+sidebar_position: 3.6
+title: Events
+---
+
+import Documentation from './_docs/_events.md'
+
+# Events
+
+The events library allows you to register callbacks for various events that occur in the game. This includes things like
+when the client is loaded, when an entity teleports, when a trigger is touched, and more.
+
+## Example
+
+```lua title="portal/lua/scripts/events_example.lua"
+events.entity_teleport:listen(function(event)
+    local entity = event.entity
+    local old_pos = event.old_pos
+    local new_pos = event.new_pos
+    console.msg("Entity (%d) teleported from (%s) to (%s)", entity:get_id(), old_pos, new_pos)
+end)
+```
+
+## Documentation
+
+---
+
+<Documentation />

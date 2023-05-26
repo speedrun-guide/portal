@@ -1,0 +1,62 @@
+---
+sidebar_position: 7
+title: Filesystem
+---
+
+import Documentation from './_docs/_filesystem.md'
+
+# Filesystem
+
+The filesystem library provides access to the filesystem. This is mostly a reflection of [C++17 std::filesystem](https://en.cppreference.com/w/cpp/filesystem),
+just made accessible to Lua with some additional helper functions and utilities here and there.
+
+## Example
+
+```lua title="portal/lua/scripts/filesystem_example.lua"
+local p = fs.path("portal/demoheader.tmp")
+
+console.msg([[
+File
+  Extension: "%s"
+  Name: "%s"
+  Parent Path: "%s"
+]], p:extension(), p:file_name(), p:parent_path())
+
+if not fs.exists("test") then
+    fs.create_directory("test")
+end
+
+local f = fs.file("test/test.txt", fs.mode.write)
+f:write("What?\nWho?\nWhere?")
+f:close()
+
+f = fs.file("test/test.txt", fs.mode.read)
+
+local d = f:read_all()
+
+f:close()
+
+console.msg("\n\n%s\n\n", d)
+
+f = fs.file("test/test.txt", fs.mode.read)
+
+console.msg("\n\n")
+
+while not f:eof() do
+    console.msg("%s\n", f:read_line())
+end
+
+console.msg("\n\n")
+
+local list = fs.list("bin", true)
+
+for _,v in pairs(list) do
+    console.msg("%s\n", v)
+end
+```
+
+## Documentation
+
+---
+
+<Documentation />
