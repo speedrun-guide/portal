@@ -5,16 +5,20 @@ slug: /tricks/reportal
 
 # Reportal
 
-Reportal is a trick that allows you to gain more exit velocity when going through a portal. This is used in a few places
+A reportal is a trick that allows you to gain more exit velocity when going through a portal. This is used in a few places
 in the glitchless category, like chamber 14, high level chamber 15, and intermediate to high level chamber 18. It is also
 used in other categories in a few places.
 
 ## How To
-It is done by placing a portal on a surface, and then placing the other portal as well. Then, while travelling through
-one of the portals, you shoot the portal you are entering away from you, and it lands very shortly after you exit the portal.
-This transfer of portal placement causes the game to push you away from the center of the portal when it lands, giving you
-more exit velocity. 
+Replace the opposite color portal that you are currently in. Note that shooting the wrong portal will trigger [FCPS](fcps) which
+will ***not*** give velocity, but this is used in various [Out of Bounds reentries](oob-reentries).
 
 The video below gives a demonstration and on screen instructions.
 
 <YouTube url="https://www.youtube.com/embed/G9mtMHJd1Ps"/>
+
+## Details
+Reportals only work on players and only when a portal is moved (i.e. not fizzled), no attempt is made to add velocity to
+other entities. Exactly 100 velocity is applied to the player in the direction of the portal normal, bypassing the normal
+maximum portal exit velocity (1000 units in any direction).
+([github leak link](https://github.com/VSES/SourceEngine2007/blob/43a5c90a5ada1e69ca044595383be67f40b33c61/src_main/game/server/portal/prop_portal.cpp#L706))
