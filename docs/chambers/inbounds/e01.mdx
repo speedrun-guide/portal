@@ -5,13 +5,32 @@ description: ""
 
 # Inbounds e01
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs queryString="tab" defaultValue="beginner" className="tabs tabs--block">
+<TabItem value="beginner" label="Beginner" attributes={{className: "beginner"}}>
+
 ## Beginner
+
+Route for new runners, but much slower than the intermediate routes on the next tab.
+
 <YouTube url="https://youtu.be/wfdPf6eh7v4"/>
 
-## Intermediate
+</TabItem>
+<TabItem value="intermediate" label="Intermediate" attributes={{className: "intermediate"}}>
 
-### Szeimartin’s SG "Route 4"
+## Szeimartin's SG "Route 4"
+
+Save glitch route that uses multiple shots to skip the entire chamber.
+
 <YouTube url="https://youtu.be/aib6hO7MJos"/>
 
-### Static SG
+## Static SG
+
+Variation of the route above, but that requires no movement at all. It is also, in theory, faster than route 4.
+
 <YouTube url="https://www.youtube.com/watch?v=9ETqPbTVwXc"/>
+
+</TabItem>
+</Tabs>
