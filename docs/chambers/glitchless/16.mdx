@@ -5,16 +5,31 @@ description: ""
 
 # Glitchless 16
 
-## Beginner
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-<YouTube url="https://www.youtube.com/watch?v=8mn6cBKV1oY" />
+<Tabs queryString="tab" defaultValue="beginner" className="tabs tabs--block">
+<TabItem value="beginner" label="Beginner" attributes={{className: "beginner"}}>
 
-## Intermediate
+<YouTube url="https://www.youtube.com/watch?v=8mn6cBKV1oY"/>
+
+</TabItem>
+<TabItem value="intermediate" label="Intermediate" attributes={{className: "intermediate"}}>
 
 ### Spiderman
 
-<YouTube url="https://youtu.be/AAdxY15XqUQ" />
+Currently the most optimal route, although there are slight optimizations that will be covered in a later video.
+
+<YouTube url="https://youtu.be/AAdxY15XqUQ"/>
+
+</TabItem>
+<TabItem value="outdated" label="Outdated" attributes={{className: "outdated"}}>
 
 ### Portal Peeks
 
-<YouTube url="https://www.youtube.com/watch?v=o_93WLugObI" />
+Previously the fastest route.
+
+<YouTube url="https://www.youtube.com/watch?v=o_93WLugObI"/>
+
+</TabItem>
+</Tabs>
