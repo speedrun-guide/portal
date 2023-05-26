@@ -2,7 +2,7 @@
   "label": "Out of Bounds",
   "position": 1,
   "link": {
-    "type": "generated-index",
-    "slug": "/chambers/oob"
+    "type": "doc",
+    "id": "oob"
   }
 }

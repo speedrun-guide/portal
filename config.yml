@@ -13,9 +13,9 @@ sections:
   intro:
     name: Introduction
     path: intro
-  chambers:
-    name: Chambers
-    path: chambers
+  categories:
+    name: Categories
+    path: categories
   extras:
     name: Extra
     path: extra
