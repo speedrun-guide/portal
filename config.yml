@@ -16,6 +16,9 @@ sections:
   categories:
     name: Categories
     path: categories
+  tricks:
+    name: Tricks
+    path: tricks
   extras:
     name: Extra
     path: extra
